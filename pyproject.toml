@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nowcast_lstm"
+version = "0.2.7"
+description = "Code for running LSTM neural networks on economic data for nowcasting"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Daniel Hopp", email = "daniel.hopp@un.org"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.18.5",
+    "pandas>=1.1.1",
+    "pmdarima>=1.7.1",
+    "torch>=1.7.0",
+    "dill",
+]
+
+[project.optional-dependencies]
+examples = [
+    "matplotlib>=3.0.0",
+    "python-dateutil>=2.8.0",
+]
+dev = [
+    "pytest>=6.0.0",
+    "matplotlib>=3.0.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dhopp1/nowcast_lstm"
+Repository = "https://github.com/dhopp1/nowcast_lstm"
+
+[tool.setuptools]
+packages = ["nowcast_lstm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
