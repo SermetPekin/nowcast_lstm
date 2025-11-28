@@ -12,21 +12,35 @@
 
 **New in v0.2.0**: ability to get feature contributions to the model and perform automatic hyperparameter tuning and variable selection, no need to write this outside of the library anymore.
 
-**Installation**: from the command line run: 
+**Installation**: 
 
-```
-# you may have pip3 installed, in which case run "pip3 install..."
-pip install dill numpy pandas pmdarima
-
-# pytorch has a little more involved install command, this for windows
-pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
-
-# this for linux
-pip install torch==1.8.1+cpu torchvision==0.9.1+cpu torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
-
-# then finally
+```bash
+# From PyPI
 pip install nowcast-lstm
 ```
+
+**Development Installation** (from GitHub):
+
+```bash
+# Clone and install
+git clone https://github.com/SermetPekin/nowcast_lstm.git
+cd nowcast_lstm
+
+# With UV (recommended - faster)
+uv venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+uv pip install -e ".[dev]"
+
+# Or with pip
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
+
+# Run tests
+pytest -v
+```
+
+See [README_UV.md](README_UV.md) for more UV installation options.
 
 <br>
 
