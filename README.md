@@ -4,7 +4,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 > [!NOTE]
-> This is a fork of [dhopp1/nowcast_lstm](https://github.com/dhopp1/nowcast_lstm) with updates for newer PyTorch versions, additional package management tooling (UV support), enhanced testing (data leakage tests), and optional dependencies structure. For the original project, please visit the [upstream repository](https://github.com/dhopp1/nowcast_lstm).
+> This is a fork of [dhopp1/nowcast_lstm](https://github.com/dhopp1/nowcast_lstm) with updates for newer PyTorch versions and Python 3.10+ support (drops Python 3.6-3.9), additional package management tooling (UV support), enhanced testing (data leakage tests), and optional dependencies structure. For the original project, please visit the [upstream repository](https://github.com/dhopp1/nowcast_lstm).
 
 **New in v0.2.6**: ability to produce logistic/binary classification estimates by passing `torch.nn.BCELoss()` to the `criterion` parameter.
 
