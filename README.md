@@ -1,5 +1,7 @@
 # nowcast_lstm
 [![Tests](https://github.com/SermetPekin/nowcast_lstm/actions/workflows/test.yml/badge.svg)](https://github.com/SermetPekin/nowcast_lstm/actions/workflows/test.yml)
+[![PyPI version](https://badge.fury.io/py/nowcast-lstm.svg)](https://badge.fury.io/py/nowcast-lstm)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 > [!NOTE]
 > This is a fork of [dhopp1/nowcast_lstm](https://github.com/dhopp1/nowcast_lstm) with updates for newer PyTorch versions, additional package management tooling (UV support), enhanced testing (data leakage tests), and optional dependencies structure. For the original project, please visit the [upstream repository](https://github.com/dhopp1/nowcast_lstm).
