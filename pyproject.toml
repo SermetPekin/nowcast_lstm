@@ -7,7 +7,7 @@ name = "nowcast_lstm"
 version = "0.2.7"
 description = "Code for running LSTM neural networks on economic data for nowcasting"
 readme = "README.md"
-requires-python = ">=3.6"
+requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
     {name = "Daniel Hopp", email = "daniel.hopp@un.org"}
